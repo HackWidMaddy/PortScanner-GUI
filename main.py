@@ -4,7 +4,10 @@ import socket
 
 
 app = Flask(__name__)
+ip_address = socket.gethostbyname(socket.gethostname())
 
+# Print the IP address
+print("IP address:", ip_address)
 
 @app.route('/')
 def index():  
