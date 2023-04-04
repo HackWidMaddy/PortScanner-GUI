@@ -45,4 +45,4 @@ def result():
            
     return render_template('result.html')
 
-app.run(debug=True)
+app.run(host='0.0.0.0')
